@@ -73,6 +73,10 @@ let CallDetailStyle = styled.div`
   padding: 10px 0;
   transition: box-shadow 0.2s ease, transform 0.07s ease,
     background-color 0.07s ease;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 
   &:hover {
     box-shadow: 1px 2px 5px #d5d5d5, -1px -2px 5px #ffffff;
@@ -165,7 +169,7 @@ let ArchiveSwipeStyle = styled.div`
   box-sizing: border-box;
   align-items: center;
   padding: 8px;
-  
+
   color: rgb(238, 238, 238);
   user-select: none;
   border-radius: 10px;
